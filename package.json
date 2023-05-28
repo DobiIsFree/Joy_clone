@@ -1,0 +1,102 @@
+{
+  "name": "JOY",
+  "displayName": "JOY",
+  "description": "Judge On You",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "JOY",
+          "title": "Judge On You",
+          "icon": "/resource/inout.png"
+        }
+      ]
+    },
+    "views": {
+      "JOY": [
+        {
+          "id": "joy-InOut",
+          "name": "In_Out"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "JOY.test",
+        "title": "JOY:Judge On You"
+      },
+      {
+        "command": "JOY.show",
+        "title": "JOY:Show Problem"
+      },
+      {
+        "command": "JOY.get",
+        "title": "JOY:Get Problem"
+      },
+      {
+        "command": "JOY.result",
+        "title": "JOY:Get Result"
+      },
+      {
+        "command": "JOY.send",
+        "title": "JOY:Send Result"
+      },
+      {
+        "command": "JOY.help",
+        "title": "JOY:Help"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "JOY Extension",
+        "properties": {
+          "JOY.serverIP": {
+            "type": "string",
+            "default": "0.0.0.0",
+            "description": "IP of server"
+          }
+        }
+      },
+      {
+        "title": "Your ID",
+        "properties": {
+          "JOY.ID": {
+            "type": "string",
+            "default": "",
+            "description": "Number or String for identification"
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.78.0",
+    "@vscode/test-electron": "^2.3.0",
+    "eslint": "^8.39.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^0.22.0",
+    "crypto-js": "^4.0.0"
+  }
+}

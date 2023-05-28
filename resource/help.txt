@@ -1,0 +1,15 @@
+<h2>1. Enter the server\'s IP and your ID in the settings of the JOY Extension</h2>
+
+<h2>2. Use the "JOY:Get Problem" command to receive the problem</h2>
+
+<h2>3. Use the "JOY:Show Problem" command to determine the content of the problem</h2>
+
+<h2>4. Example inputs and outputs for the problem can be found in the sidebar</h2>
+
+<h2>5. Write the code in the main.c in each test folder created</h2>
+
+<h2>6. When you\'re done writing the code, use the "JOY:Judge On You" command to score</h2>
+						  
+<h2>7. Use the "JOY:Get Result" command to check the results for the code</h2>
+
+<h2>7. If you have solved all the problems, use the "JOY:Send Result" command to send the results</h2>'
