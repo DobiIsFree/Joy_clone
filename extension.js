@@ -104,6 +104,7 @@ function activate(context){
 			}
 		);
 		let htmlContent = view.webview.html;
+		// txt file 외부 변경
 		// htmlContent += '<h2>1. Enter the server\'s IP and your ID in the settings of the JOY Extension</h2> \
 		//   				  <h2>2. Use the "JOY:Get Problem" command to receive the problem</h2>\
 		// 				  <h2>3. Use the "JOY:Show Problem" command to determine the content of the problem</h2>\
